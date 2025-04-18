@@ -50,10 +50,10 @@ export default function AutoReply({ name }: AutoReplyProps) {
                 Vijay
                 <br />
                 <Link
-                  href="https://yourportfolio.com"
+                  href="https://vijayvelaga.me"
                   className="text-blue-600 hover:text-blue-800"
                 >
-                  yourportfolio.com
+                  vijayvelaga.me
                 </Link>
               </Text>
             </Section>

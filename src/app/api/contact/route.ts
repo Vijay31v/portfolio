@@ -61,7 +61,7 @@ export async function POST(req: Request) {
     
     // Send notification email to yourself
     const notificationResult = await resend.emails.send({
-      from: 'Portfolio Contact <onboarding@resend.dev>', // Use verified domain in production
+      from: 'Portfolio Contact <onboarding@vijayvelaga.me>',
       to: YOUR_EMAIL,
       subject: `New Contact from ${name}`,
       replyTo: email,
@@ -70,7 +70,7 @@ export async function POST(req: Request) {
     
     // Send auto-reply to the sender
     const autoReplyResult = await resend.emails.send({
-      from: 'Vijay <onboarding@resend.dev>', // Use verified domain in production
+      from: 'Vijay <onboarding@vijayvelaga.me>',
       to: email,
       subject: 'Thank you for your message',
       react: AutoReply({ name }),
