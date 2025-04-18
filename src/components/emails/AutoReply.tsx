@@ -33,8 +33,8 @@ export default function AutoReply({ name }: AutoReplyProps) {
 
               <Text className="text-gray-700 mb-4">
                 Thank you for reaching out to me through my portfolio website.
-                I've received your message and will get back to you as soon as
-                possible.
+                I&apos;ve received your message and will get back to you as soon
+                as possible.
               </Text>
 
               <Text className="text-gray-700 mb-6">

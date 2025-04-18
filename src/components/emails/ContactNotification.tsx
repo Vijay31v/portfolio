@@ -35,7 +35,7 @@ export default function ContactNotification({
 
             <Section className="mb-6">
               <Text className="text-gray-700 mb-4">
-                You've received a new message from your portfolio website:
+                You&apos;ve received a new message from your portfolio website:
               </Text>
 
               <Section className="bg-gray-50 p-4 rounded border border-gray-200">

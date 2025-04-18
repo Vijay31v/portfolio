@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import Link from 'next/link';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
@@ -37,7 +36,7 @@ const projects: Project[] = [
       'Docker',
     ],
     imageUrl: '/projects/learning-management.jpg',
-    githubUrl: 'https://github.com/yourusername/learning-management',
+    githubUrl: 'https://github.com/Vijay31v/learning-management',
   },
   {
     id: 'ai-trip-planner',
@@ -52,7 +51,7 @@ const projects: Project[] = [
       'Google OAuth2',
     ],
     imageUrl: '/projects/ai-trip-planner.jpg',
-    githubUrl: 'https://github.com/yourusername/ai-trip-planner',
+    githubUrl: 'https://github.com/Vijay31v/AI-Trip-Planner',
   },
   {
     id: 'real-estate-app',
@@ -69,7 +68,7 @@ const projects: Project[] = [
       'JWT',
     ],
     imageUrl: '/projects/real-estate.jpg',
-    githubUrl: 'https://github.com/yourusername/real-estate-app',
+    githubUrl: 'https://github.com/Vijay31v/Real-Estate-Application',
   },
 ];
 
@@ -126,8 +125,8 @@ export default function Projects() {
                   {expandedProject === project.id
                     ? project.description
                     : project.description.length > 150
-                    ? `${project.description.substring(0, 150)}...`
-                    : project.description}
+                      ? `${project.description.substring(0, 150)}...`
+                      : project.description}
                 </p>
 
                 {project.description.length > 150 && (

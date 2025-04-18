@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, FormEvent } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { useForm } from 'react-hook-form';
@@ -77,7 +77,7 @@ export default function Contact() {
         >
           <h2 className="heading">Contact Me</h2>
           <p className="subheading mt-4 max-w-2xl mx-auto">
-            Interested in working together? Let's connect!
+            Interested in working together? Let&apos;s connect!
           </p>
         </motion.div>
 
@@ -93,9 +93,9 @@ export default function Contact() {
             <h3 className="text-xl font-bold">Get In Touch</h3>
 
             <p className="text-muted-foreground">
-              I'm currently looking for new opportunities. Whether you have a
-              question or just want to say hi, I'll try my best to get back to
-              you!
+              I&apos;m currently looking for new opportunities. Whether you have
+              a question or just want to say hi, I&apos;ll try my best to get
+              back to you!
             </p>
 
             <div className="space-y-4 mt-8">
