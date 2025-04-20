@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaExternalLinkAlt, FaHackerrank } from 'react-icons/fa';
-import { SiOpenai } from 'react-icons/si';
 
 type Education = {
   institution: string;
