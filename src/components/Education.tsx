@@ -46,19 +46,19 @@ const educationList: Education[] = [
 
 const certificates: Certificate[] = [
   {
-    name: '5* Problem Solving badge on HackerRank',
+    name: 'Problem Solving',
     logo: <FaHackerrank className="h-6 w-6 text-[#00EA64]" />,
-    url: 'https://www.hackerrank.com/certificates/your-badge',
+    url: 'https://www.hackerrank.com/certificates/e6c6ba2c0d1d',
   },
   {
-    name: '5* Python badge on HackerRank',
+    name: 'Python',
     logo: <FaHackerrank className="h-6 w-6 text-[#00EA64]" />,
-    url: 'https://www.hackerrank.com/certificates/your-badge',
+    url: 'https://www.hackerrank.com/certificates/d03d12733cd2',
   },
   {
-    name: 'ChatGPT Prompt Engineering for Developers',
-    logo: <SiOpenai className="h-6 w-6 text-[#74aa9c]" />,
-    url: 'https://www.coursera.org/your-certificate',
+    name: 'SQL',
+    logo: <FaHackerrank className="h-6 w-6 text-[#00EA64]" />,
+    url: 'https://www.hackerrank.com/certificates/1bb53388df2a',
   },
 ];
 
