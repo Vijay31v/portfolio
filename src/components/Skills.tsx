@@ -7,6 +7,7 @@ import {
   SiTypescript,
   SiJavascript,
   SiTailwindcss,
+  SiSpringboot,
 } from 'react-icons/si';
 import {
   SiNodedotjs,
@@ -70,9 +71,9 @@ export default function Skills() {
       color: 'text-[#339933]',
     },
     {
-      icon: <SiExpress className="h-10 w-10" />,
-      name: 'Express.js',
-      color: 'text-[#000000] dark:text-white',
+      icon: <SiSpringboot className="h-10 w-10" />,
+      name: 'Spring Boot',
+      color: 'text-[#6DB33F]',
     },
     {
       icon: <SiMongodb className="h-10 w-10" />,
@@ -93,7 +94,7 @@ export default function Skills() {
     {
       icon: <FaAws className="h-10 w-10" />,
       name: 'AWS',
-      color: 'text-[#232F3E]',
+      color: 'text-orange-500',
     },
     {
       icon: <SiDocker className="h-10 w-10" />,

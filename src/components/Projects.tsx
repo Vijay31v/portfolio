@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 type Project = {
@@ -16,6 +17,23 @@ type Project = {
 };
 
 const projects: Project[] = [
+  {
+    id: 'blog-sphere',
+    title: 'BlogSphere',
+    description:
+      'a feature-rich, full-stack blogging platform using Spring Boot, Thymeleaf, and Bootstrap 5, designed to deliver a seamless user experience for content creation, engagement, and administration. This project showcases proficiency in developing secure, scalable web applications with comprehensive user management, real-time interactions, and data-driven analytics. The platform supports 10+ core modules, from initial user registration to advanced content moderation and insightful analytics reporting.',
+    technologies: [
+      'Spring Boot',
+      'Thymeleaf',
+      'Bootstrap 5',
+      'JavaScript',
+      'MySQL',
+      'CSS3',
+      'HTML5',
+    ],
+    imageUrl: '/projects/blogsphere.png',
+    githubUrl: 'https://github.com/Vijay31v/BlogSphere',
+  },
   {
     id: 'learning-management',
     title: 'Learning Management App',
@@ -35,7 +53,7 @@ const projects: Project[] = [
       'TypeScript',
       'Docker',
     ],
-    imageUrl: '/projects/learning-management.jpg',
+    imageUrl: '/projects/learning-management.png',
     githubUrl: 'https://github.com/Vijay31v/learning-management',
   },
   {
@@ -50,7 +68,7 @@ const projects: Project[] = [
       'Google Gemini AI',
       'Google OAuth2',
     ],
-    imageUrl: '/projects/ai-trip-planner.jpg',
+    imageUrl: '/projects/ai-trip-planner.png',
     githubUrl: 'https://github.com/Vijay31v/AI-Trip-Planner',
   },
   {
@@ -67,7 +85,7 @@ const projects: Project[] = [
       'Prisma ORM',
       'JWT',
     ],
-    imageUrl: '/projects/real-estate.jpg',
+    imageUrl: '/projects/real-estate.png',
     githubUrl: 'https://github.com/Vijay31v/Real-Estate-Application',
   },
 ];
@@ -112,7 +130,14 @@ export default function Projects() {
                 <div className="aspect-video relative rounded-lg overflow-hidden shadow-xl">
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent z-10" />
                   <div className="relative h-full w-full bg-muted flex items-center justify-center">
-                    <span className="text-muted-foreground">Project Image</span>
+                    <span className="text-muted-foreground">
+                      <Image
+                        src={project.imageUrl}
+                        alt={project.title + 'image'}
+                        width={700}
+                        height={600}
+                      />
+                    </span>
                   </div>
                 </div>
               </div>

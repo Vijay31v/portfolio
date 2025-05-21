@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaExternalLinkAlt, FaHackerrank } from 'react-icons/fa';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 
 type Education = {
   institution: string;
@@ -17,8 +17,8 @@ type Education = {
 
 type Certificate = {
   name: string;
-  issuer?: string;
-  logo: React.ReactNode;
+  issuer: string;
+  logo: string;
   url?: string;
 };
 
@@ -28,7 +28,7 @@ const educationList: Education[] = [
     degree: 'MS',
     field: 'Computer Science',
     period: 'Aug 2023 - May 2025',
-    gpa: '3.66/4.0',
+    gpa: '3.7/4.0',
     logo: '/logos/ucm-logo.png',
     website: 'https://www.ucmo.edu/',
   },
@@ -46,17 +46,20 @@ const educationList: Education[] = [
 const certificates: Certificate[] = [
   {
     name: 'Problem Solving',
-    logo: <FaHackerrank className="h-6 w-6 text-[#00EA64]" />,
+    logo: '/logos/hackerrank-logo.png',
+    issuer: 'Hackerrank',
     url: 'https://www.hackerrank.com/certificates/e6c6ba2c0d1d',
   },
   {
     name: 'Python',
-    logo: <FaHackerrank className="h-6 w-6 text-[#00EA64]" />,
+    logo: '/logos/hackerrank-logo.png',
+    issuer: 'Hackerrank',
     url: 'https://www.hackerrank.com/certificates/d03d12733cd2',
   },
   {
     name: 'SQL',
-    logo: <FaHackerrank className="h-6 w-6 text-[#00EA64]" />,
+    logo: '/logos/hackerrank-logo.png',
+    issuer: 'Hackerrank',
     url: 'https://www.hackerrank.com/certificates/1bb53388df2a',
   },
 ];
@@ -139,7 +142,7 @@ export default function Education() {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <h3 className="text-xl font-bold mb-6 text-center md:text-left">
-              Certifications & Awards
+              Certifications
             </h3>
 
             <div className="card h-full flex flex-col justify-center">
@@ -156,7 +159,13 @@ export default function Education() {
                         whileHover={{ x: 5 }}
                       >
                         <div className="h-10 w-10 rounded-full bg-primary/10 text-primary flex items-center justify-center">
-                          {cert.logo}
+                          <Image
+                            src={cert.logo}
+                            alt={cert.issuer}
+                            width={48}
+                            height={48}
+                            className="object-contain"
+                          />
                         </div>
                         <div>
                           <div className="flex items-center gap-2">

@@ -15,6 +15,18 @@ type Experience = {
 
 const experiences: Experience[] = [
   {
+    company: 'Capgemini, Chennai',
+    position: 'Software Engineer',
+    period: 'Jan 2022 - Dec 2022',
+    logo: '/logos/Capgemini.webp',
+    description: [
+      'Spearheaded development and delivery of 5+ key MERN stack modules for client web applications, enhancing core application functionality and improving client operations.',
+      'Implemented 20 responsive React components per technical specs and UI mockups, improving user interaction.',
+      'Improved software quality and stability with comprehensive unit tests (Jest/React Testing Library), increasing vital component test coverage by 20%+ and resolving 30+ high-priority defects (JIRA/ADO).',
+      'Applied Agile/Scrum, exceeding sprint commitments by 15% on average (9-11 story points vs 8-point target) and leveraged Git for version control, enhancing team productivity.',
+    ],
+  },
+  {
     company: 'iPLON India, Chennai',
     position: 'Software Engineer Intern',
     period: 'Dec 2022 - Mar 2023',
