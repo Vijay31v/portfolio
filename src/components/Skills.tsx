@@ -9,13 +9,7 @@ import {
   SiTailwindcss,
   SiSpringboot,
 } from 'react-icons/si';
-import {
-  SiNodedotjs,
-  SiExpress,
-  SiMongodb,
-  SiMysql,
-  SiPrisma,
-} from 'react-icons/si';
+import { SiNodedotjs, SiMongodb, SiMysql, SiPrisma } from 'react-icons/si';
 import { FaAws, FaJava } from 'react-icons/fa';
 import { SiDocker, SiGit } from 'react-icons/si';
 import { SiPython } from 'react-icons/si';
